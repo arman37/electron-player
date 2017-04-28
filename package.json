@@ -1,0 +1,47 @@
+{
+  "name": "electron-player",
+  "version": "1.0.0",
+  "description": "A Smart music player developed with Electron & React",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "watchify app/components/app.js -t babelify -o public/js/bundle.js --debug --verbose",
+    "build": "browserify app/components/app.js -t babelify -o public/js/bundle.js --debug --verbose"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "player",
+    "redux",
+    "react"
+  ],
+  "author": "Arman Bhuiyan",
+  "license": "no-license",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babelify": "^7.3.0"
+  },
+  "dependencies": {
+    "base64-js": "^1.2.0",
+    "classnames": "^2.2.3",
+    "drivelist": "^5.0.4",
+    "electron": "^1.4.15",
+    "electron-config": "^0.2.1",
+    "electron-reload": "^0.2.0",
+    "immutable": "^3.8.1",
+    "material-ui": "^0.16.6",
+    "musicmetadata": "^2.0.5",
+    "react": "^15.4.2",
+    "react-autocomplete": "^1.0.0-rc2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.4",
+    "react-sound": "^0.5.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "reactjs-coverflow": "^1.1.0",
+    "readdirp": "^2.1.0",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "soundmanager2": "^2.97.20150601-a"
+  }
+}
