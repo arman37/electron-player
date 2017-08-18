@@ -31,14 +31,17 @@ function createWindow () {
       webPreferences: {
           nodeIntegration: true
       },
-      icon: __dirname + '/public/images/player-icon-4.png'
+      icon: __dirname + '/dist/public/images/player-icon-4.png'
   });
 
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }));
+  // and load the index.html of the app.
+  mainWindow.loadURL('http://localhost:8080');
+
+  // mainWindow.loadURL(url.format({
+  //   pathname: path.join(__dirname, 'index.html'),
+  //   protocol: 'file:',
+  //   slashes: true
+  // }));
 
   //mainWindow.webContents.openDevTools();
 
