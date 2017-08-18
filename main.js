@@ -1,26 +1,22 @@
-const
-     os = require('os')
-    ,fs = require('fs')
-    ,url = require('url')
-    ,path = require('path')
-    ,mm = require('musicmetadata')
-    ,scanner = require('readdirp')
-    ,electron = require('electron')
-    ,drivelist = require('drivelist')
-    ,Config = require('electron-config')
-    ;
+const os = require('os');
+const fs = require('fs');
+const url = require('url');
+const path = require('path');
+const mm = require('musicmetadata');
+const scanner = require('readdirp');
+const electron = require('electron');
+const drivelist = require('drivelist');
+const Config = require('electron-config');
 
-let
-     mainWindow = null
-    ,app = electron.app
-    ,ipc = electron.ipcMain
-    ,dialog = electron.dialog
-    ,BrowserWindow = electron.BrowserWindow
-    ,config = new Config({
+let mainWindow = null;
+let app = electron.app;
+let ipc = electron.ipcMain;
+let dialog = electron.dialog;
+let BrowserWindow = electron.BrowserWindow;
+let config = new Config({
         name: 'electron-player-user-preferences',
         pathList: []
-    })
-    ;
+    });
 
 
 function createWindow () {
