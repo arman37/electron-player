@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "webpack --progress --colors --hot --config ./webpack.config.js",
     "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
   },
   "repository": {
@@ -19,6 +20,45 @@
   ],
   "author": "Arman Bhuiyan <arman.it37@gmail.com>",
   "license": "no-license",
+  "build": {
+    "productName": "Electron Player",
+    "appId": "electronplayerid",
+    "files": [
+      "dist/",
+      "node_modules/",
+      "main.js",
+      "package.json"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "AppImage"
+      ]
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    }
+  },
   "babel": {
     "presets": [
       "es2015",
