@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "watch": "watchify app/components/app.js -t babelify -o public/js/bundle.js --debug --verbose",
-    "build": "browserify app/components/app.js -t babelify -o public/js/bundle.js --debug --verbose"
+    "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
   },
   "repository": "",
   "keywords": [
