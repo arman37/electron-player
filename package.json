@@ -1,45 +1,61 @@
 {
-  "name": "electron-player",
+  "name": "electron__player",
   "version": "1.0.0",
-  "description": "A Smart music player developed with Electron & React",
+  "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arman37/electron-player"
+  },
   "keywords": [
     "Electron",
+    "smart",
     "player",
-    "redux",
     "react"
   ],
-  "author": "Arman Bhuiyan",
+  "author": "Arman Bhuiyan <arman.it37@gmail.com>",
   "license": "no-license",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babelify": "^7.3.0"
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "electron": "^1.6.11",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
     "base64-js": "^1.2.0",
     "classnames": "^2.2.5",
-    "drivelist": "^5.0.19",
-    "electron": "^1.6.6",
-    "electron-config": "^1.0.0",
+    "drivelist": "^5.0.4",
+    "electron-config": "^0.2.1",
     "immutable": "^3.8.1",
-    "material-ui": "^0.18.0",
+    "material-ui": "^0.16.6",
     "musicmetadata": "^2.0.5",
     "react": "^15.5.4",
-    "react-autocomplete": "^1.5.1",
+    "react-autocomplete": "^1.0.0-rc2",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
-    "react-sound": "^0.6.0",
+    "react-sound": "^0.5.2",
     "react-tap-event-plugin": "^2.0.1",
-    "reactjs-coverflow": "^1.1.1",
+    "reactjs-coverflow": "^1.1.0",
     "readdirp": "^2.1.0",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "soundmanager2": "^2.97.20150601-a"
+    "soundmanager2": "^2.97.20150601-a",
+    "styled-components": "^1.4.5"
   }
 }
