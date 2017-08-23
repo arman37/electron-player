@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "test": "jest -u --watch",
     "build": "webpack --progress --colors --hot --config ./webpack.config.js",
     "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
   },
