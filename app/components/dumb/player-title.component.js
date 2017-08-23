@@ -6,9 +6,9 @@
 
 import React from 'react';
 
-const Title = () => {
+const Title = ({text}) => {
     return (
-        <h1 className="title deep-shadow">Electron Player</h1>
+        <h1 className="title deep-shadow">{text}</h1>
     );
 };
 
