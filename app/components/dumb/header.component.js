@@ -23,7 +23,7 @@ const Header = ({drawerOpen, tableView, toggleTableView, handleDrawerOpen, handl
                     toggleTableView={toggleTableView}
                     handleDrawerOpen={handleDrawerOpen}
                     handleCatViewChange={handleCatViewChange} />
-                <Title/>
+                <Title text="Electron Player" />
                 <Drawer
                     width={200}
                     openSecondary={true}
