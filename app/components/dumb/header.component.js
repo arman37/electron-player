@@ -14,38 +14,40 @@ import Cancel from 'material-ui/svg-icons/navigation/cancel';
 import LibMusic from 'material-ui/svg-icons/av/library-music';
 
 const Header = ({drawerOpen, tableView, toggleTableView, handleDrawerOpen, handleDialogOpen, handleCatViewChange}) => {
-    return (
-        <Paper zDepth={5} className="header__wrapper">
-            <div className="player__header">
-                <Menu
-                    tableView={tableView}
-                    drawerOpen={drawerOpen}
-                    toggleTableView={toggleTableView}
-                    handleDrawerOpen={handleDrawerOpen}
-                    handleCatViewChange={handleCatViewChange} />
-                <Title text="Electron Player" />
-                <Drawer
-                    width={200}
-                    openSecondary={true}
-                    open={drawerOpen}
-                    docked={false}
-                    onRequestChange={handleDrawerOpen} >
-                    <FlatButton
-                        label="Cancel"
-                        icon={<Cancel />}
-                        labelPosition="before"
-                        style={{width: '100%', textAlign: 'left'}}
-                        onClick={handleDrawerOpen.bind(null, false)} />
-                    <FlatButton
-                        icon={<LibMusic />}
-                        label="Music Library"
-                        labelPosition="before"
-                        style={{width: '100%', textAlign: 'left'}}
-                        onClick={handleDialogOpen.bind(null, true)} />
-                </Drawer>
-            </div>
-        </Paper>
-    )
+  return (
+    <Paper zDepth={5} className="header__wrapper">
+      <div className="player__header">
+        <Menu
+          tableView={tableView}
+          drawerOpen={drawerOpen}
+          toggleTableView={toggleTableView}
+          handleDrawerOpen={handleDrawerOpen}
+          handleCatViewChange={handleCatViewChange} />
+        <Title text="Electron Player" />
+        <Drawer
+          width={200}
+          docked={false}
+          open={drawerOpen}
+          openSecondary={true}
+          onRequestChange={handleDrawerOpen} >
+          <FlatButton
+            label="Cancel"
+            icon={<Cancel />}
+            labelPosition="before"
+            className='drawer__hide'
+            style={{width: '100%', textAlign: 'left'}}
+            onClick={handleDrawerOpen.bind(null, false)} />
+          <FlatButton
+            icon={<LibMusic />}
+            label="Music Library"
+            labelPosition="before"
+            className='open__library__dialog'
+            style={{width: '100%', textAlign: 'left'}}
+            onClick={handleDialogOpen.bind(null, true)} />
+        </Drawer>
+      </div>
+    </Paper>
+  );
 };
 
 export default Header;
