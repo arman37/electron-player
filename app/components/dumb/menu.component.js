@@ -17,49 +17,49 @@ const btnStyle = {
 };
 
 const Menu = ({tableView, drawerOpen, toggleTableView, handleDrawerOpen, handleCatViewChange}) => {
-    return (
-        <nav className="menu">
-            <input type="checkbox" href="#" className="menu__open" name="menu__open" id="menu__open" />
-            <label className="menu__open__button" htmlFor="menu__open">
-                <span className="menu__icon menu__icon-1"></span>
-                <span className="menu__icon menu__icon-2"></span>
-                <span className="menu__icon menu__icon-3"></span>
-            </label>
+  return (
+    <nav className="menu">
+      <input type="checkbox" href="#" className="menu__open" name="menu__open" id="menu__open" />
+      <label className="menu__open__button" htmlFor="menu__open">
+        <span className="menu__icon menu__icon-1"></span>
+        <span className="menu__icon menu__icon-2"></span>
+        <span className="menu__icon menu__icon-3"></span>
+      </label>
 
-            <a href="#" className="menu__item settings" title="Settings">
-                <FloatingActionButton
-                    mini={true}
-                    style={btnStyle}
-                    onClick={handleDrawerOpen.bind(null, !drawerOpen)} >
-                    <Settings />
-                </FloatingActionButton>
-            </a>
-            <a href="#" className="menu__item audio__library" title="Audio Library">
-                <FloatingActionButton
-                    mini={true}
-                    style={btnStyle}
-                    onClick={handleCatViewChange.bind(null, 'audio')} >
-                    <Audio />
-                </FloatingActionButton>
-            </a>
-            <a href="#" className="menu__item video__library" title="Video Library">
-                <FloatingActionButton
-                    mini={true}
-                    style={btnStyle}
-                    onClick={handleCatViewChange.bind(null, 'video')} >
-                    <Video />
-                </FloatingActionButton>
-            </a>
-            <a href="#" className="menu__item" style={{backgroundColor: 'white', textAlign: 'center'}} title="Change View">
-                <div className="btn__change__view" style={{margin: '10px 5px auto auto'}}>
-                    <Toggle
-                        defaultToggled={!tableView}
-                        style={{width: '10px', float: 'right'}}
-                        onToggle={toggleTableView} />
-                </div>
-            </a>
-        </nav>
-    );
+      <a href="#" className="menu__item settings" title="Settings">
+        <FloatingActionButton
+          mini={true}
+          style={btnStyle}
+          onClick={handleDrawerOpen.bind(null, !drawerOpen)} >
+          <Settings />
+        </FloatingActionButton>
+      </a>
+      <a href="#" className="menu__item audio__library" title="Audio Library">
+        <FloatingActionButton
+          mini={true}
+          style={btnStyle}
+          onClick={handleCatViewChange.bind(null, 'audio')} >
+          <Audio />
+        </FloatingActionButton>
+      </a>
+      <a href="#" className="menu__item video__library" title="Video Library">
+        <FloatingActionButton
+          mini={true}
+          style={btnStyle}
+          onClick={handleCatViewChange.bind(null, 'video')} >
+          <Video />
+        </FloatingActionButton>
+      </a>
+      <a href="#" className="menu__item" style={{backgroundColor: 'white', textAlign: 'center'}} title="Change View">
+        <div className="btn__change__view" style={{margin: '10px 5px auto auto'}}>
+          <Toggle
+              defaultToggled={!tableView}
+              style={{width: '10px', float: 'right'}}
+              onToggle={toggleTableView} />
+        </div>
+      </a>
+    </nav>
+  );
 };
 
 export default Menu;
