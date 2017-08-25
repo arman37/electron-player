@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu component renders the menu items correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <nav
+    className="menu"
+>
+    <input
+        className="menu__open"
+        href="#"
+        id="menu__open"
+        name="menu__open"
+        type="checkbox"
+    />
+    <label
+        className="menu__open__button"
+        htmlFor="menu__open"
+    >
+        <span
+            className="menu__icon menu__icon-1"
+        />
+        <span
+            className="menu__icon menu__icon-2"
+        />
+        <span
+            className="menu__icon menu__icon-3"
+        />
+    </label>
+    <a
+        className="menu__item settings"
+        href="#"
+        title="Settings"
+    >
+        <FloatingActionButton
+            disabled={false}
+            mini={true}
+            onClick={[Function]}
+            secondary={false}
+            style={
+                Object {
+                    "marginLeft": "0.3px",
+                    "marginTop": "2.2px",
+                  }
+            }
+            zDepth={2}
+        >
+            <ActionSettings />
+        </FloatingActionButton>
+    </a>
+    <a
+        className="menu__item audio__library"
+        href="#"
+        title="Audio Library"
+    >
+        <FloatingActionButton
+            disabled={false}
+            mini={true}
+            onClick={[Function]}
+            secondary={false}
+            style={
+                Object {
+                    "marginLeft": "0.3px",
+                    "marginTop": "2.2px",
+                  }
+            }
+            zDepth={2}
+        >
+            <AvLibraryMusic />
+        </FloatingActionButton>
+    </a>
+    <a
+        className="menu__item video__library"
+        href="#"
+        title="Video Library"
+    >
+        <FloatingActionButton
+            disabled={false}
+            mini={true}
+            onClick={[Function]}
+            secondary={false}
+            style={
+                Object {
+                    "marginLeft": "0.3px",
+                    "marginTop": "2.2px",
+                  }
+            }
+            zDepth={2}
+        >
+            <AvVideoLibrary />
+        </FloatingActionButton>
+    </a>
+    <a
+        className="menu__item"
+        href="#"
+        style={
+            Object {
+                "backgroundColor": "white",
+                "textAlign": "center",
+              }
+        }
+        title="Change View"
+    >
+        <div
+            className="btn__change__view"
+            style={
+                Object {
+                    "margin": "10px 5px auto auto",
+                  }
+            }
+        >
+            <Toggle
+                defaultToggled={true}
+                disabled={false}
+                labelPosition="left"
+                onToggle={[Function]}
+                style={
+                    Object {
+                        "float": "right",
+                        "width": "10px",
+                      }
+                }
+            />
+        </div>
+    </a>
+</nav>,
+  "nodes": Array [
+    <nav
+      className="menu"
+>
+      <input
+            className="menu__open"
+            href="#"
+            id="menu__open"
+            name="menu__open"
+            type="checkbox"
+      />
+      <label
+            className="menu__open__button"
+            htmlFor="menu__open"
+      >
+            <span
+                  className="menu__icon menu__icon-1"
+            />
+            <span
+                  className="menu__icon menu__icon-2"
+            />
+            <span
+                  className="menu__icon menu__icon-3"
+            />
+      </label>
+      <a
+            className="menu__item settings"
+            href="#"
+            title="Settings"
+      >
+            <FloatingActionButton
+                  disabled={false}
+                  mini={true}
+                  onClick={[Function]}
+                  secondary={false}
+                  style={
+                        Object {
+                              "marginLeft": "0.3px",
+                              "marginTop": "2.2px",
+                            }
+                  }
+                  zDepth={2}
+            >
+                  <ActionSettings />
+            </FloatingActionButton>
+      </a>
+      <a
+            className="menu__item audio__library"
+            href="#"
+            title="Audio Library"
+      >
+            <FloatingActionButton
+                  disabled={false}
+                  mini={true}
+                  onClick={[Function]}
+                  secondary={false}
+                  style={
+                        Object {
+                              "marginLeft": "0.3px",
+                              "marginTop": "2.2px",
+                            }
+                  }
+                  zDepth={2}
+            >
+                  <AvLibraryMusic />
+            </FloatingActionButton>
+      </a>
+      <a
+            className="menu__item video__library"
+            href="#"
+            title="Video Library"
+      >
+            <FloatingActionButton
+                  disabled={false}
+                  mini={true}
+                  onClick={[Function]}
+                  secondary={false}
+                  style={
+                        Object {
+                              "marginLeft": "0.3px",
+                              "marginTop": "2.2px",
+                            }
+                  }
+                  zDepth={2}
+            >
+                  <AvVideoLibrary />
+            </FloatingActionButton>
+      </a>
+      <a
+            className="menu__item"
+            href="#"
+            style={
+                  Object {
+                        "backgroundColor": "white",
+                        "textAlign": "center",
+                      }
+            }
+            title="Change View"
+      >
+            <div
+                  className="btn__change__view"
+                  style={
+                        Object {
+                              "margin": "10px 5px auto auto",
+                            }
+                  }
+            >
+                  <Toggle
+                        defaultToggled={true}
+                        disabled={false}
+                        labelPosition="left"
+                        onToggle={[Function]}
+                        style={
+                              Object {
+                                    "float": "right",
+                                    "width": "10px",
+                                  }
+                        }
+                  />
+            </div>
+      </a>
+</nav>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Menu
+        drawerOpen={false}
+        handleCatViewChange={[Function]}
+        handleDrawerOpen={[Function]}
+        tableView={false}
+        toggleTableView={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "drawerOpen": false,
+          "handleCatViewChange": [Function],
+          "handleDrawerOpen": [Function],
+          "tableView": false,
+          "toggleTableView": [Function],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <nav
+          className="menu"
+>
+          <input
+                    className="menu__open"
+                    href="#"
+                    id="menu__open"
+                    name="menu__open"
+                    type="checkbox"
+          />
+          <label
+                    className="menu__open__button"
+                    htmlFor="menu__open"
+          >
+                    <span
+                              className="menu__icon menu__icon-1"
+                    />
+                    <span
+                              className="menu__icon menu__icon-2"
+                    />
+                    <span
+                              className="menu__icon menu__icon-3"
+                    />
+          </label>
+          <a
+                    className="menu__item settings"
+                    href="#"
+                    title="Settings"
+          >
+                    <FloatingActionButton
+                              disabled={false}
+                              mini={true}
+                              onClick={[Function]}
+                              secondary={false}
+                              style={
+                                        Object {
+                                                  "marginLeft": "0.3px",
+                                                  "marginTop": "2.2px",
+                                                }
+                              }
+                              zDepth={2}
+                    >
+                              <ActionSettings />
+                    </FloatingActionButton>
+          </a>
+          <a
+                    className="menu__item audio__library"
+                    href="#"
+                    title="Audio Library"
+          >
+                    <FloatingActionButton
+                              disabled={false}
+                              mini={true}
+                              onClick={[Function]}
+                              secondary={false}
+                              style={
+                                        Object {
+                                                  "marginLeft": "0.3px",
+                                                  "marginTop": "2.2px",
+                                                }
+                              }
+                              zDepth={2}
+                    >
+                              <AvLibraryMusic />
+                    </FloatingActionButton>
+          </a>
+          <a
+                    className="menu__item video__library"
+                    href="#"
+                    title="Video Library"
+          >
+                    <FloatingActionButton
+                              disabled={false}
+                              mini={true}
+                              onClick={[Function]}
+                              secondary={false}
+                              style={
+                                        Object {
+                                                  "marginLeft": "0.3px",
+                                                  "marginTop": "2.2px",
+                                                }
+                              }
+                              zDepth={2}
+                    >
+                              <AvVideoLibrary />
+                    </FloatingActionButton>
+          </a>
+          <a
+                    className="menu__item"
+                    href="#"
+                    style={
+                              Object {
+                                        "backgroundColor": "white",
+                                        "textAlign": "center",
+                                      }
+                    }
+                    title="Change View"
+          >
+                    <div
+                              className="btn__change__view"
+                              style={
+                                        Object {
+                                                  "margin": "10px 5px auto auto",
+                                                }
+                              }
+                    >
+                              <Toggle
+                                        defaultToggled={true}
+                                        disabled={false}
+                                        labelPosition="left"
+                                        onToggle={[Function]}
+                                        style={
+                                                  Object {
+                                                            "float": "right",
+                                                            "width": "10px",
+                                                          }
+                                        }
+                              />
+                    </div>
+          </a>
+</nav>,
+        "_debugID": 2,
+        "_renderedOutput": <nav
+          className="menu"
+>
+          <input
+                    className="menu__open"
+                    href="#"
+                    id="menu__open"
+                    name="menu__open"
+                    type="checkbox"
+          />
+          <label
+                    className="menu__open__button"
+                    htmlFor="menu__open"
+          >
+                    <span
+                              className="menu__icon menu__icon-1"
+                    />
+                    <span
+                              className="menu__icon menu__icon-2"
+                    />
+                    <span
+                              className="menu__icon menu__icon-3"
+                    />
+          </label>
+          <a
+                    className="menu__item settings"
+                    href="#"
+                    title="Settings"
+          >
+                    <FloatingActionButton
+                              disabled={false}
+                              mini={true}
+                              onClick={[Function]}
+                              secondary={false}
+                              style={
+                                        Object {
+                                                  "marginLeft": "0.3px",
+                                                  "marginTop": "2.2px",
+                                                }
+                              }
+                              zDepth={2}
+                    >
+                              <ActionSettings />
+                    </FloatingActionButton>
+          </a>
+          <a
+                    className="menu__item audio__library"
+                    href="#"
+                    title="Audio Library"
+          >
+                    <FloatingActionButton
+                              disabled={false}
+                              mini={true}
+                              onClick={[Function]}
+                              secondary={false}
+                              style={
+                                        Object {
+                                                  "marginLeft": "0.3px",
+                                                  "marginTop": "2.2px",
+                                                }
+                              }
+                              zDepth={2}
+                    >
+                              <AvLibraryMusic />
+                    </FloatingActionButton>
+          </a>
+          <a
+                    className="menu__item video__library"
+                    href="#"
+                    title="Video Library"
+          >
+                    <FloatingActionButton
+                              disabled={false}
+                              mini={true}
+                              onClick={[Function]}
+                              secondary={false}
+                              style={
+                                        Object {
+                                                  "marginLeft": "0.3px",
+                                                  "marginTop": "2.2px",
+                                                }
+                              }
+                              zDepth={2}
+                    >
+                              <AvVideoLibrary />
+                    </FloatingActionButton>
+          </a>
+          <a
+                    className="menu__item"
+                    href="#"
+                    style={
+                              Object {
+                                        "backgroundColor": "white",
+                                        "textAlign": "center",
+                                      }
+                    }
+                    title="Change View"
+          >
+                    <div
+                              className="btn__change__view"
+                              style={
+                                        Object {
+                                                  "margin": "10px 5px auto auto",
+                                                }
+                              }
+                    >
+                              <Toggle
+                                        defaultToggled={true}
+                                        disabled={false}
+                                        labelPosition="left"
+                                        onToggle={[Function]}
+                                        style={
+                                                  Object {
+                                                            "float": "right",
+                                                            "width": "10px",
+                                                          }
+                                        }
+                              />
+                    </div>
+          </a>
+</nav>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Menu
+    drawerOpen={false}
+    handleCatViewChange={[Function]}
+    handleDrawerOpen={[Function]}
+    tableView={false}
+    toggleTableView={[Function]}
+/>,
+}
+`;
