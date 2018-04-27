@@ -97,7 +97,7 @@
     "react-redux": "^5.0.7",
     "react-sound": "^1.1.0",
     "react-tap-event-plugin": "^3.0.2",
-    "reactjs-coverflow": "^2.1.3",
+    "reactjs-coverflow": "^1.1.0",
     "readdirp": "^2.1.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
