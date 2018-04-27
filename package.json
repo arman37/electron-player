@@ -7,7 +7,12 @@
     "start": "electron .",
     "test": "jest -u --watchAll",
     "build": "webpack --progress --colors --config ./webpack.build-config.js --mode production",
-    "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js --mode development"
+    "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js --mode development",
+    "dist:osx": "build --platform darwin",
+    "dist:win32": "build --platform win32 --arch ia32",
+    "dist:win64": "build --platform win32 --arch x64",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:linux": "npm run build && electron-builder --linux"
   },
   "repository": {
     "type": "git",
