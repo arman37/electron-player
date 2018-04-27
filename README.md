@@ -21,3 +21,8 @@ Preview
 ![Screenshot1](/screenshots/screenshot5.png)
 ![Screenshot2](/screenshots/screenshot6.png)
 ![Screenshot1](/screenshots/screenshot7.png)
+
+
+### License
+
+[MIT licensed](./LICENSE)
