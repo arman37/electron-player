@@ -38,7 +38,7 @@ function createWindow () {
   mainWindow.loadURL('http://localhost:8080');
 
   // mainWindow.loadURL(url.format({
-  //   pathname: path.join(__dirname, 'index.html'),
+  //   pathname: path.join(__dirname, '/dist/index.html'),
   //   protocol: 'file:',
   //   slashes: true
   // }));
@@ -70,9 +70,9 @@ let handleDialogOpenRequest = (event) => {
 
     function handleFile(files) {
         if(files) {
-            var path = files.toString();
+            let path = files.toString();
             handleMetadata(path, function (metadata) {
-                var track = buildTrackInfo({fullPath: path}, metadata)
+                let track = buildTrackInfo({fullPath: path}, metadata);
                 event.sender.send('selected-track', track);
             });
         }
@@ -120,7 +120,7 @@ let getFileReady = (ipcEvent) => {
     let platform = os.platform();
     let pathList = config.get('pathList');
 
-    if(pathList.length) {
+    if(pathList && pathList.length) {
         pathList.forEach((path) => {
             console.log('Started Scanning for files at ', path);
             scanner({
@@ -135,7 +135,7 @@ let getFileReady = (ipcEvent) => {
                 files.push(entry);
                 handleMetadata(filePath, (metadata) => {
                     console.log('Metadata counter:', ++counter);
-                    var track = buildTrackInfo(entry, metadata);
+                    let track = buildTrackInfo(entry, metadata);
                     ipcEvent.sender.send('new-track', track);
                 });
             })
