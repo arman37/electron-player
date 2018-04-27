@@ -35,13 +35,13 @@ function createWindow () {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL('http://localhost:8080');
+  //mainWindow.loadURL('http://localhost:8080');
 
-  // mainWindow.loadURL(url.format({
-  //   pathname: path.join(__dirname, '/dist/index.html'),
-  //   protocol: 'file:',
-  //   slashes: true
-  // }));
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, '/dist/index.html'),
+    protocol: 'file:',
+    slashes: true
+  }));
 
   //mainWindow.webContents.openDevTools();
 
