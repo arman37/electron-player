@@ -50,7 +50,7 @@ const Menu = ({tableView, drawerOpen, toggleTableView, handleDrawerOpen, handleC
           <Video />
         </FloatingActionButton>
       </a>
-      <a href="#" className="menu__item" style={{backgroundColor: 'white', textAlign: 'center'}} title="Change View">
+      <a href="#" className="menu__item" style={{backgroundColor: 'white', textAlign: 'center'}} title="Switch View">
         <div className="btn__change__view" style={{margin: '10px 5px auto auto'}}>
           <Toggle
               defaultToggled={!tableView}
