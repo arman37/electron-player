@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "test": "jest -u --watchAll",
-    "build": "webpack --progress --colors --config ./webpack.config.js --mode production",
+    "build": "webpack --progress --colors --config ./webpack.build-config.js --mode production",
     "watch": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js --mode development"
   },
   "repository": {
