@@ -22,6 +22,8 @@ Preview
 ![Screenshot2](/screenshots/screenshot6.png)
 ![Screenshot1](/screenshots/screenshot7.png)
 
+### Contributing
+If you like the project, shoot a start and feel free to fork & send PR anytime.
 
 ### License
 

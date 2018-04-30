@@ -24,7 +24,7 @@
     "react"
   ],
   "author": "Arman Bhuiyan <arman.it37@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "build": {
     "productName": "Electron Player",
     "appId": "electronplayerid",
