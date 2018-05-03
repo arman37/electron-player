@@ -6,10 +6,16 @@
 
 import React from 'react';
 
+/**
+ *
+ * @param text
+ * @returns {XML}
+ * @constructor
+ */
 const Title = ({text}) => {
-    return (
-        <h1 className="title deep-shadow">{text}</h1>
-    );
+  return (
+    <h1 className="title deep-shadow">{text}</h1>
+  );
 };
 
 export default Title;

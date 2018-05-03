@@ -10,6 +10,10 @@ import Paper from 'material-ui/Paper';
 import Title from './player-title.component';
 import CustomDrawer from './custom-drawer.component';
 
+/**
+ *
+ * @constructor
+ */
 const Header = ({}) => (
   <Paper zDepth={5} className="header__wrapper">
     <div className="player__header">

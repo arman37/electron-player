@@ -10,6 +10,7 @@ import initialState from '../store/initial-state';
 import thunkMiddleware from 'redux-thunk';
 import Reducer from '../reducers';
 
+// logger middleware to log every dispatch
 let logger = store => next => action => {
   let result;
   console.log('Dispatching: ', action.type);
