@@ -7,22 +7,10 @@
 import base64 from 'base64-js';
 import { List, Map } from 'immutable';
 import * as Types from '../constants';
+import initialState from '../store/initial-state';
 const config = new (nodeRequire('electron-config'))({name: 'electron-player-user-preferences'});
 
-const init = Map({
-    audioView: true,
-    tableView: false,
-    dialogOpen: false,
-    drawerOpen: false,
-    trackMetadata: null,
-    backgroundImage: '',
-    audioTrackList: List.of(),
-    tbodyHeight: '680px',
-    scanningForTracks: false,
-    searchPathList: List.of()
-  });
-
-export default function(state = init, action) {
+export default function(state = initialState, action) {
     switch(action.type) {
         case Types.ADD_NEW_TRACK:
             return state.set('audioTrackList', state.get('audioTrackList').push(action.payload));

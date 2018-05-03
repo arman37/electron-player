@@ -6,22 +6,18 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Reducer from '../reducers';
-import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import thunkMiddleware from 'redux-thunk';
 import {initializeApp} from '../actions';
+import storeFactory from '../store/index';
 import {Containers} from './smart/containers';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const store = createStore(Reducer, applyMiddleware(
-    thunkMiddleware, // lets us dispatch() functions
-));
+const store = storeFactory();
 
 injectTapEventPlugin();
 class App extends React.Component {
-  render () {
+  render() {
     return (
         <Provider store={store}>
             <div className="electron__player body">
