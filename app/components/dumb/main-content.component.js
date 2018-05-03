@@ -14,14 +14,7 @@ import AddLibrary from '../dumb/add-library.component';
 const MainContent = ({tableView, audioView, audioTrackList, addPath, toggleTableView, dialogOpen, drawerOpen, trackMetadata, tbodyHeight, clearPath, searchPathList, backgroundImage, updateMetadata, handleClose, scanningForTracks, handleViewChange, handleDialogOpen, handleDrawerOpen, handleCatViewChange}) => {
     return (
         <div className="main__content">
-            <Header
-                tableView={tableView}
-                drawerOpen={drawerOpen}
-                toggleTableView={toggleTableView}
-                handleViewChange={handleViewChange}
-                handleDialogOpen={handleDialogOpen}
-                handleDrawerOpen={handleDrawerOpen}
-                handleCatViewChange={handleCatViewChange} />
+            <Header />
             <AddLibrary
                 dialogOpen={dialogOpen}
                 addPath={addPath}

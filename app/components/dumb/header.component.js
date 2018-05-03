@@ -7,47 +7,17 @@
 import React from 'react';
 import Menu from './menu.component';
 import Paper from 'material-ui/Paper';
-import Drawer from 'material-ui/Drawer';
 import Title from './player-title.component';
-import FlatButton from 'material-ui/FlatButton';
-import Cancel from 'material-ui/svg-icons/navigation/cancel';
-import LibMusic from 'material-ui/svg-icons/av/library-music';
+import CustomDrawer from './custom-drawer.component';
 
-const Header = ({drawerOpen, tableView, toggleTableView, handleDrawerOpen, handleDialogOpen, handleCatViewChange}) => {
-  return (
-    <Paper zDepth={5} className="header__wrapper">
-      <div className="player__header">
-        <Menu
-          tableView={tableView}
-          drawerOpen={drawerOpen}
-          toggleTableView={toggleTableView}
-          handleDrawerOpen={handleDrawerOpen}
-          handleCatViewChange={handleCatViewChange} />
-        <Title text="Electron Player" />
-        <Drawer
-          width={200}
-          docked={false}
-          open={drawerOpen}
-          openSecondary={true}
-          onRequestChange={handleDrawerOpen} >
-          <FlatButton
-            label="Cancel"
-            icon={<Cancel />}
-            labelPosition="before"
-            className='drawer__hide'
-            style={{width: '100%', textAlign: 'left'}}
-            onClick={handleDrawerOpen.bind(null, false)} />
-          <FlatButton
-            icon={<LibMusic />}
-            label="Music Library"
-            labelPosition="before"
-            className='open__library__dialog'
-            style={{width: '100%', textAlign: 'left'}}
-            onClick={handleDialogOpen.bind(null, true)} />
-        </Drawer>
-      </div>
-    </Paper>
-  );
-};
+const Header = ({}) => (
+  <Paper zDepth={5} className="header__wrapper">
+    <div className="player__header">
+      <Menu />
+      <Title text="Electron Player" />
+      <CustomDrawer />
+    </div>
+  </Paper>
+);
 
 export default Header;
