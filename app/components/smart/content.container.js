@@ -7,7 +7,7 @@
 import React from 'react';
 import Audio from '../dumb/audio.component';
 import Video from '../dumb/video.component';
-import Details from '../dumb/details.component';
+import Details from '../dumb/current-track-details.component';
 
 let val = 0;
 
