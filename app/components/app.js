@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import {initializeApp} from '../actions';
 import storeFactory from '../store/index';
-import {Containers} from './smart/containers';
+import MainContent from './dumb/main-content.component';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
         <Provider store={store}>
             <div className="electron__player body">
-                <Containers />
+                <MainContent />
             </div>
         </Provider>
     );
